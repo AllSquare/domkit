@@ -2,4 +2,4 @@
 
 var canUseDOM = require('./canUseDOM');
 
-module.exports = canUseDOM && document.createElement('div').style;
+module.exports = (canUseDOM && document.createElement('div').style) || {};
